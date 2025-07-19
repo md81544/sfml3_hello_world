@@ -3,6 +3,7 @@ project(HelloSFML3)
 
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_BUILD_TYPE Debug)
 
 # Find SFML 3 packages
 find_package(SFML 3.0 COMPONENTS System Window Graphics REQUIRED)
