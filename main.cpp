@@ -20,6 +20,13 @@ int main()
                 if (keyEvent->code == sf::Keyboard::Key::Q && keyEvent->control) {
                     window.close();
                 }
+                if (keyEvent->code == sf::Keyboard::Key::S && keyEvent->alt) {
+                    text.setString("Alt-S pressed");
+                }
+                if (keyEvent->code == sf::Keyboard::Key::S
+                    && sf::Keyboard::isKeyPressed(sf::Keyboard::Key::RAlt)) {
+                    text.setString("AltGr-S pressed");
+                }
             }
         }
 
